@@ -12,10 +12,11 @@ Stable Network Connection
 ```
 ```
 A Modern Browser (e.g. Edge, Chrome, Firefox)
+We recommend the latest Chrome
 ```
 
 ### Running
-Just double click on ```index.html``` to open up and you can start reviewing the supplementary!
+Just double click on ```index.html``` to open up in browser and you can start reviewing the supplementary!
 
 ### Appendix
 In case you need to refer to the original files for some reason, here are a few instructions.
