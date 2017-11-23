@@ -17,8 +17,6 @@ A Modern Browser (e.g. Edge, Chrome, Firefox)
 ### Running
 Just double click on ```index.html``` to open up and you can start reviewing the supplementary!
 
-An alternative is to visit an [anoymous site](https://iamacewhite.github.io/supp/index.html) for a deployed version.
-
 ### Appendix
 In case you need to refer to the original files for some reason, here are a few instructions.
 
