@@ -98,11 +98,42 @@
 
   <div class="container-fluid text-center" id="qua_comp">
     <h2>Quanlitative Comparison</h2>
-    <p align="left"><strong>Note</strong>: Each following section corresponds to a generation task, namely video generation, video prediction and video completion. Columns named "Real" stands for real data (for your reference). Columns named "Input-n" stands for input frames where n is the frame number used (e.g. “Input-1” means the 1st frame in a video is used as input/constraint). The other columns show the qualitative results of each method. For our method we also show our pose sequence results, denoted as “Ours-Pose”. Each row corresponds to an action class, from top to bottom: Direction, Greeting, Sitting, Sitting Down, Walking. </p>
+    <p align="left"><strong>Note</strong>: Each following section corresponds to a generation task, namely video generation, video prediction and video completion. Columns named "Real" stands for real data (for your reference). Columns named "Input-n" stands for input frames where n is the frame number used (e.g. “Input-1” means the 1st frame in a video is used as input/constraint). The other columns show the qualitative results of each method. For our method we also show our pose sequence results, denoted as “Ours-Pose”. Each row corresponds to an action class, from top to bottom: Walking, Direction, Greeting, Sitting, Sitting Down. </p>
   </div>
   <div class="container-fluid bg-3 text-center">
     <div class="row">
       <h3>Video Generation</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-2">
+        <h3>Real</h3>
+        <video width="400" controls>
+        <source src="qua_res/gt/Walking.mp4" type="video/mp4">
+
+      </video>
+      </div>
+      <div class="col-sm-2">
+        <h3>VGAN</h3>
+        <video width="400" controls>
+        <source src="qua_res/vgan/Walking.mp4" type="video/mp4">
+
+      </video>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="ours">Ours</h3>
+        <video width="400" controls>
+        <source src="qua_res/ours_gen/Walking.mp4" type="video/mp4">
+
+      </video>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="ours">Ours-Pose</h3>
+        <video width="400" controls>
+        <source src="qua_res/ours_gen_pose/Walking.mp4" type="video/mp4">
+
+      </video>
+      </div>
+
     </div>
     <div class="row">
       <div class="col-sm-2 col-sm-offset-2">
@@ -226,43 +257,63 @@
       </div>
 
     </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-2">
-        <h3>Real</h3>
-        <video width="400" controls>
-        <source src="qua_res/gt/Walking.mp4" type="video/mp4">
 
-      </video>
-      </div>
-      <div class="col-sm-2">
-        <h3>VGAN</h3>
-        <video width="400" controls>
-        <source src="qua_res/vgan/Walking.mp4" type="video/mp4">
-
-      </video>
-      </div>
-      <div class="col-sm-2">
-        <h3 id="ours">Ours</h3>
-        <video width="400" controls>
-        <source src="qua_res/ours_gen/Walking.mp4" type="video/mp4">
-
-      </video>
-      </div>
-      <div class="col-sm-2">
-        <h3 id="ours">Ours-Pose</h3>
-        <video width="400" controls>
-        <source src="qua_res/ours_gen_pose/Walking.mp4" type="video/mp4">
-
-      </video>
-      </div>
-
-    </div>
   </div><br>
   <div class="jumbotron">
     <div class="container-fluid bg-3 text-center">
       <div class="row">
         <h3>Video Prediction</h3>
       </div>
+      <div class="row">
+        <div class="col-sm-1">
+          <h3>Input-1</h3>
+          <img src="qua_res/pred_input/Walking/input_0.png" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Input-3</h3>
+          <img src="qua_res/pred_input/Walking/input_2.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1">
+          <h3>Input-2</h3>
+          <img src="qua_res/pred_input/Walking/input_1.png" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Input-4</h3>
+          <img src="qua_res/pred_input/Walking/input_3.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+
+        <div class="col-sm-2">
+          <h3>PredNet</h3>
+          <video width="400" controls>
+          <source src="qua_res/prednet/Walking.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="col-sm-2">
+          <h3>PoseVAE</h3>
+          <video width="400" controls>
+          <source src="qua_res/tpk/Walking.mp4" type="video/mp4">
+
+        </video>
+        </div>
+        <div class="col-sm-2">
+          <h3>MS-GAN</h3>
+          <video width="400" controls>
+        <source src="qua_res/msgan/Walking.mp4" type="video/mp4">
+
+        </video>
+          </div>
+          <div class="col-sm-2">
+            <h3 id="ours">Ours</h3>
+            <video width="400" controls>
+          <source src="qua_res/ours_pred/Walking.mp4" type="video/mp4">
+
+        </video>
+          </div>
+          <div class="col-sm-2">
+            <h3 id="ours">Ours-Pose</h3>
+            <video width="400" controls>
+          <source src="qua_res/ours_pred_pose/Walking.mp4" type="video/mp4">
+
+        </video>
+          </div>
+      </div>
+      <hr>
       <div class="row">
         <div class="col-sm-1">
           <h3>Input-1</h3>
@@ -463,62 +514,39 @@
         </video>
           </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-sm-1">
-          <h3>Input-1</h3>
-          <img src="qua_res/pred_input/Walking/input_0.png" class="img-responsive" style="width:100%" alt="Image">
-          <h3>Input-3</h3>
-          <img src="qua_res/pred_input/Walking/input_2.png" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="col-sm-1">
-          <h3>Input-2</h3>
-          <img src="qua_res/pred_input/Walking/input_1.png" class="img-responsive" style="width:100%" alt="Image">
-          <h3>Input-4</h3>
-          <img src="qua_res/pred_input/Walking/input_3.png" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-
-        <div class="col-sm-2">
-          <h3>PredNet</h3>
-          <video width="400" controls>
-          <source src="qua_res/prednet/Walking.mp4" type="video/mp4">
-        </video>
-        </div>
-        <div class="col-sm-2">
-          <h3>PoseVAE</h3>
-          <video width="400" controls>
-          <source src="qua_res/tpk/Walking.mp4" type="video/mp4">
-
-        </video>
-        </div>
-        <div class="col-sm-2">
-          <h3>MS-GAN</h3>
-          <video width="400" controls>
-        <source src="qua_res/msgan/Walking.mp4" type="video/mp4">
-
-        </video>
-          </div>
-          <div class="col-sm-2">
-            <h3 id="ours">Ours</h3>
-            <video width="400" controls>
-          <source src="qua_res/ours_pred/Walking.mp4" type="video/mp4">
-
-        </video>
-          </div>
-          <div class="col-sm-2">
-            <h3 id="ours">Ours-Pose</h3>
-            <video width="400" controls>
-          <source src="qua_res/ours_pred_pose/Walking.mp4" type="video/mp4">
-
-        </video>
-          </div>
-      </div>
-
     </div><br>
   </div>
   <div class="container-fluid bg-3 text-center">
     <div class="row">
       <h3>Video Completion</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-1">
+        <h3>Input-1</h3>
+        <img src="qua_res/comp_input/Walking/first.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-2">
+        <h3>Input-50</h3>
+        <img src="qua_res/comp_input/Walking/last.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-2">
+        <h3>cond-VGAN</h3>
+        <video width="400" controls>
+          <source src="qua_res/vgan_comp/Walking.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="ours">Ours</h3>
+        <video width="400" controls>
+          <source src="qua_res/ours_comp/Walking.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="ours">Ours-Pose</h3>
+        <video width="400" controls>
+        <source src="qua_res/ours_comp_pose/Walking.mp4" type="video/mp4">
+      </video>
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-2 col-sm-offset-1">
@@ -635,34 +663,7 @@
       </video>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-1">
-        <h3>Input-1</h3>
-        <img src="qua_res/comp_input/Walking/first.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-2">
-        <h3>Input-50</h3>
-        <img src="qua_res/comp_input/Walking/last.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-2">
-        <h3>cond-VGAN</h3>
-        <video width="400" controls>
-          <source src="qua_res/vgan_comp/Walking.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="col-sm-2">
-        <h3 id="ours">Ours</h3>
-        <video width="400" controls>
-          <source src="qua_res/ours_comp/Walking.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="col-sm-2">
-        <h3 id="ours">Ours-Pose</h3>
-        <video width="400" controls>
-        <source src="qua_res/ours_comp_pose/Walking.mp4" type="video/mp4">
-      </video>
-      </div>
-    </div>
+
   </div><br>
 
   <div class="jumbotron" id="our_illus">
