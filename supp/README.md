@@ -38,6 +38,9 @@ All our results are in ```qua_res/```
 |   +-- pred_input: input for video prediction (first 4 frames)  
 |   +-- pred_input_pose: input pose for video prediction  
 |   +-- prednet: video prediction results from PredNet [18]  
+|   +-- quant_fig: quantitative comparison as shown in Fig. 11 in paper
 |   +-- tpk: video prediction results from PoseVAE [37]  
+|   +-- ucf_results: Our results for video generation/prediction/completion on UCF-101 [40]
+|   +-- ucf_teaser: full video for Fig. 2 in paper. Video generation with real-world reference image
 |   +-- vgan: video generation results from Video-GAN [35]  
 |   +-- vgan_comp: video completion results from Conditional Video-GAN [35]  
