@@ -3,7 +3,7 @@ Supplementary Material
 
 ## Getting Started
 
-Here are some instructions for viewing our supplementary material on a webpage
+Here are some instructions for viewing our supplementary material on a webpage. (Please unzip it to a new folder)
 
 ### Prerequisites
 
